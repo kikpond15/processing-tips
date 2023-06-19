@@ -15,7 +15,9 @@ style: |
 ---
 <!-- _class: lead -->
 # Leap Motion setup guide
+
 ---
+
 # はじめに
 
 2023年現在，LeapMotionの販売元である現UltraLeap社が提供している最新SDKでは，LeapMotion(V1)はサポートされていない様です．
@@ -28,15 +30,15 @@ style: |
   - Mac：MacBook Pro 2.7 GHz クアッドコアIntel Core i7, macOS Monterey
   - Win：2.5 GHz Intel Core i5-10300H, Windows11, RTX-2060
 
-<font color="red">※現在，自分の環境で発生した問題として，一度接続が切れるとPCを再起動しないと再接続できない症状が出ています．</font>
+<span style="color: red"> ※現在，自分のMac環境で発生した問題として，一度接続が切れるとPCを再起動しないと再接続できない症状が出ています．</span>
 
 ---
+
 # LeapMotionの接続確認
 
 LeapMotionがPCに正しく接続されると，LeapMotionのデバイスに内部のLEDが<font color="red">赤く点灯します</font>．下記のインストール手順を完了しても赤く光らない場合は，LeapMotionを接続したまま，**PCを再起動**してみて下さい．
 
 ---
-
 
 <!-- _class: lead -->
 # Mac（intel）
@@ -44,6 +46,7 @@ LeapMotionがPCに正しく接続されると，LeapMotionのデバイスに内�
 ---
 <!-- ![bg 100% right:50% contrast:1.5 brightness:1.2](img/fig00.png) -->
 ## SDK＆ドライバ　ダウンロード
+
 LeapMotion用の古いドライバーとSDKをダウンロードします．
 ドライバーのバージョンは1.6.1, SDKは2.3.1で動作しました．
 ネットから同バージョンのものをダウンロードしてくるか，
@@ -64,7 +67,9 @@ PL2303_MacOSX_1.6.1_20160309.pkgを開き，ドライバーをインスロール
 <image src="img/fig13.png" width=200></image> アプリケーション　　　<image src="img/fig14.png" width=270></image> メニューバー
 
 ---
-## Processingで動作確認
+
+## Processingで動作確認(Winと同様)
+
 Visualizerで動作が確認できたら，ProcessingでLeapMotion Libraryをインストールして動作を確認してみましょう．
 Processing > Sketch > Manage Libraries > 検索[Leap] > Leap Motion for Processing
 
@@ -78,8 +83,11 @@ Examples > LM_1_Basicsを開き，手が認識されれば成功です．
 ---
 <!-- _class: lead -->
 # Windows
+
 ---
+
 ## SDK＆ドライバ　ダウンロード
+
 LeapMotion用の古いドライバーとSDKをダウンロードします．
 ドライバーのバージョンは3.2.1で動作しました．
 ネットから同バージョンのものをダウンロードしてくるか，
@@ -88,9 +96,32 @@ LeapMotion用の古いドライバーとSDKをダウンロードします．
 <br>
 ドライバー：Leap_Motion_Orion_Setup_win_3.2.1.exe
 
+---
 
+ダウンロードしたインストーラーを起動し，インストールを完了させ，PCを再起動する．スタートメニューの検索
+から`Leap`と検索すると以下の様にLeapMotionのアプリケーションがインストールされているのが確認できます．
 
+![fig17](img/fig17.png)
+
+---
+LeapMotionを接続し，前図の**LeapMotionControlPanel**を起動する．インジケーターにLeapMotionが追加され，緑色になっていれば接続成功．
+**LeapMotionVisualizer**を起動し，下図の様にLeapMotionのカメラが起動すればOK．
+
+<img src="img/fig19.png" width="300"> <img src="img/fig18.png" width="500">LeapMotionVisualizer
+
+<br>
+LeapMotionVisualizerが動作しないときは，LeapMotionControlPanelのトラブルシューティングから**デバイスの再調整**を行うと良い．
 
 ---
 
-# References
+## Processingで動作確認(Macと同様)
+
+Visualizerで動作が確認できたら，ProcessingでLeapMotion Libraryをインストールして動作を確認してみましょう．
+Processing > Sketch > Manage Libraries > 検索[Leap] > Leap Motion for Processing
+
+<image src="img/fig15.png" width=1200>
+
+---
+<!-- <image src="img/fig16.png" width=800> -->
+![bg 100% right:50%](img/fig16.png)
+Examples > LM_1_Basicsを開き，手が認識されれば成功です．
