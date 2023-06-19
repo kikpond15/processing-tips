@@ -21,7 +21,7 @@ style: |
 # Mac
 
 ---
-![bg 100% right:50% contrast:1.5 brightness:1.2](img/fig00.png)
+![bg 100% right:50%](img/fig00.png)
 
 ## ダウンロード
 [Processing公式サイト](https://processing.org)の[Downloadページ](https://processing.org/download)から，所有のMacOSに応じてアプリをダウンロードする．
